@@ -1,7 +1,5 @@
 import { createCanvas, drawPath, percentToVal, resetShadow } from "./utils";
 
-createClock({ containerId: "clockContainer", width: 400, height: 400 });
-
 export function createClock({ containerId, width, height, className = "" }: { containerId: string; width: number; height: number; className?: string; }) {
   const container = document.getElementById(containerId); // returned value can either be a HTMLElement or null;
   if (container) {
